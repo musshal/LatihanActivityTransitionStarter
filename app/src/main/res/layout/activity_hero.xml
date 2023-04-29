@@ -14,7 +14,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/ahmad_dahlan" />
+        tools:srcCompat="@drawable/ahmad_dahlan"
+        android:transitionName="profile" />
 
     <TextView
         android:id="@+id/nameTextView"
@@ -27,7 +28,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profileImageView"
-        tools:text="@string/heroes_name" />
+        tools:text="@string/heroes_name"
+        android:transitionName="name" />
 
     <TextView
         android:id="@+id/descTextView"
@@ -42,5 +44,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nameTextView"
-        tools:text="@string/description" />
+        tools:text="@string/description"
+        android:transitionName="description" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
